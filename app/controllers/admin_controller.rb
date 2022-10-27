@@ -7,7 +7,6 @@ class AdminController < ApplicationController
   def show 
     @applicant = Applicant.find(params[:id])
     @petapplicant = PetApplicant.find_petapplicant(params[:id], params[:pet_id])
-  
   end
   
   def update 
@@ -16,5 +15,4 @@ class AdminController < ApplicationController
     @applicant = Applicant.find(params[:id])
     redirect_to "/admin/applicants/#{@applicant.id}"
   end
-
 end

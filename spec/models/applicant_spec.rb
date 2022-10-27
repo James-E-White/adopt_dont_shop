@@ -20,5 +20,12 @@ RSpec.describe Applicant, type: :model do
                 expect(@applicant1.pets?).to eq(true)
             end
         end
+
+        describe '#add_pet' do 
+            it 'adds pet to the applicant' do
+                @applicant1.add_pet(@pet1.id)
+                expect(@applicant1.pets.last.name).to eq(@pet1.name)
+            end
+        end
     end
 end

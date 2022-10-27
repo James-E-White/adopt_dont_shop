@@ -25,5 +25,4 @@ class Pet < ApplicationRecord
   def applicant_status(applicant_id)
     PetApplicant.where(pet_id: self.id).where(applicant_id: applicant_id).last.status
   end
-
 end

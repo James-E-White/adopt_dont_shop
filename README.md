@@ -28,9 +28,9 @@ During your Check In, you should be prepared to review your database schema for 
 ## Deploy
 
 ```
-[ ] done
 
-0: Deploy your application to Heroku
+
+Deploy your application to Heroku
 
 As a visitor of the site
 I will perform all user stories
